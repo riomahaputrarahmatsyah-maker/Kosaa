@@ -1,12 +1,19 @@
 # Build Android
 
-Folder ini menyimpan APK rilis Kosaa (arm64-v8a, profil EAS `preview`, keystore sama
-sehingga bisa dipasang menimpa versi sebelumnya tanpa menghapus data).
+> ⚠️ **Masih tahap pengembangan (beta)** — fitur, UI, dan format data masih bisa berubah; jangan jadikan satu-satunya tempat menyimpan data penting.
 
-| File | Versi | versionCode | Tanggal | Isi |
+APK rilis Kosaa (arm64-v8a, profil EAS `preview`, keystore sama sehingga bisa dipasang
+menimpa versi sebelumnya tanpa menghapus data).
+
+| File | Versi | versionCode | Tanggal | Unduh langsung |
 | --- | --- | --- | --- | --- |
-| `Kosaa-1.0.1-arm64.apk` | 1.0.1 | 2 | 2026-11-07 | Rilis awal yang dilaporkan masih bermasalah (keyboard menutup composer, panah kirim hilang, node bertumpuk) |
-| `Kosaa-1.0.2-arm64.apk` | 1.0.2 | 3 | 2026-11-08 | Rilis terbaru: keyboard-aware, panah kirim selalu tampak, posisi node aman, PDF → .md "coming soon", agent benar-benar memanggil tool + ingat konteks |
+| `Kosaa-1.0.2-arm64.apk` | 1.0.2 | 3 | 2026-11-08 | [unduh](https://raw.githubusercontent.com/riomahaputrarahmatsyah-maker/Kosaa/master/builds/Kosaa-1.0.2-arm64.apk) · 38.176.239 byte |
+| `Kosaa-1.0.1-arm64.apk` | 1.0.1 | 2 | 2026-11-07 | [unduh](https://raw.githubusercontent.com/riomahaputrarahmatsyah-maker/Kosaa/master/builds/Kosaa-1.0.1-arm64.apk) · 38.232.347 byte |
+
+- **1.0.1** — rilis awal yang dilaporkan bermasalah (keyboard menutup composer, panah kirim
+  hilang, node bertumpuk).
+- **1.0.2** — rilis terbaru: keyboard-aware, panah kirim selalu tampak, posisi node aman,
+  PDF → .md "coming soon", agent benar-benar memanggil tool + ingat konteks antar-putaran.
 
 ## Riwayat build 1.0.2
 
@@ -26,5 +33,5 @@ Artefaknya tersimpan di EAS (halaman build memuat tombol *Download*):
 npx eas build -p android --profile preview
 ```
 
-APK muncul di halaman build EAS. Pasang di perangkat dengan mengaktifkan
-"Install unknown apps" untuk file manager/browser yang dipakai.
+APK muncul di halaman build EAS. Setelah selesai, letakkan salinannya di folder ini agar ikut
+ter-versi di repo (`.gitignore` mengecualikan `builds/*.apk` dari aturan `*.apk`).

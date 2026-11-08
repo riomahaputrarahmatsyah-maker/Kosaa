@@ -1,11 +1,24 @@
 # Kosaa — Local-First Second Brain
 
+> ⚠️ **Masih tahap pengembangan (beta)** — fitur, UI, dan format data masih bisa berubah; jangan jadikan satu-satunya tempat menyimpan data penting.
+
 Kosaa adalah aplikasi mobile yang menggabungkan catatan lokal (file markdown + SQLite),
 Knowledge Graph yang bisa diedit manual maupun oleh AI, chatbot DeepSeek, dan kalender.
 Semua data tinggal di perangkat.
 
 Dokumentasi teknis: [arsitektur](docs/architecture.md) · [AI agent](docs/ai-agent.md) ·
 [design system](docs/design.md) · [riwayat prompt](docs/prompts.md).
+
+## Download APK
+
+| Versi | APK (arm64-v8a) | Ukuran |
+| --- | --- | --- |
+| **1.0.2** (terbaru) | [Kosaa-1.0.2-arm64.apk](https://raw.githubusercontent.com/riomahaputrarahmatsyah-maker/Kosaa/master/builds/Kosaa-1.0.2-arm64.apk) | 38.176.239 byte (36,4 MB) |
+| 1.0.1 (arsip) | [Kosaa-1.0.1-arm64.apk](https://raw.githubusercontent.com/riomahaputrarahmatsyah-maker/Kosaa/master/builds/Kosaa-1.0.1-arm64.apk) | 38.232.347 byte (36,5 MB) |
+
+Link unduh langsung (raw): klik nama file di atas, atau buka folder
+[`builds/`](builds/README.md) untuk riwayat build dan link EAS tiap iterasi 1.0.2.
+Pasang dengan mengaktifkan "Install unknown apps" untuk browser/file manager yang dipakai.
 
 ## Fitur
 
